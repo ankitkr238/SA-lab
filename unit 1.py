@@ -1,3 +1,4 @@
+###part1
 ##import numpy as np
 ##import matplotlib.pyplot as plt
 ##from scipy.stats import norm
@@ -33,6 +34,7 @@
 ##plt.tight_layout()
 ##plt.show()
 
+#part2
 #Demonstrating Centarl Limit Theorem Violation with the Cauchy-Lorentz Distribution
 import numpy as np
 import matplotlib.pyplot as plt
@@ -54,6 +56,7 @@ plt.xlim(-10, 10) # Limit x-axis to visualize better (Cauchy has heavy tails)
 plt.grid()
 plt.show()
 
+###part3
 ##import numpy as np
 ##import matplotlib.pyplot as plt
 ##from scipy.stats import randint
@@ -96,6 +99,7 @@ plt.show()
 ##plt.grid(False)
 ##plt.show()
 
+###part4
 ##import numpy as np
 ##import matplotlib.pyplot as plt
 ##from scipy.stats import norm
