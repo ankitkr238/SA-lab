@@ -126,3 +126,27 @@ plt.show()
 ### Display joint probabilities (sample values for bins)
 ##print("Sample Joint Probability Density Matrix:")
 ##print(joint_prob_continuous)
+
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.stats import norm
+n=10000
+##x=np.random.normal(size=n)
+##y=np.random.normal(size=n)
+def generate(n):
+    a=[]
+    while len(a)<n:
+        z=np.random.normal(loc=0.5,scale=0.1)
+        if z >=0 and z<=1:
+            a.append(z)
+    return np.array(a)
+x=generate(n)
+y=generate(n)
+
+hist,x_edg,y_edg =np.histogram2d(x,y,bins=20,density=True)
+
+plt.imshow(hist,origin='lower',cmap='viridis',
+extent=[y_edg[0],y_edg[-1],x_edg[0],x_edg[-1]])
+##plt.xticks(np.round_(y_edg,2))
+##plt.yticks(x_edg)
+plt.show()
